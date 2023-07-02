@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <title>Id Card generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>id card generator</h1>
+        <div class="box">
+            <div class="box-left">
+                <h3>Enter student details</h3>
+                <form id="mainForm">
+                    <label for="studentName">Enter Name:</label>
+                    <input type="text" id="studentName" name="studentName">
+
+                    <label for="collegeName">Enter College Name:</label>
+                    <input type="text" id="collegeName" name="collegeName" />
+
+                    <label for="location">Enter location:</label>
+                    <input type="text" id="lacation" name="location">
+
+                    <label for="picture">Enter student's picture:</label>
+                    <input type="file" id="picture" name="picture" accept="image/*">
+                    <div id="img-preview"></div>
+
+                    <button id="btn" type="submit">Generate ID</button>
+                </form>
+            </div>
+
+
+            <div class="box-right">
+                <h3 id="hiddenH3" style="margin-top: 100px; color: rgb(46, 44, 44);visibility: hidden;">Generated ID Card</h3>
+                <div id="id-card">
+                    <div id="id-card-img"></div>
+                    <div class="id-card-info">
+                        Name: <span id="student-name-generated"></span><br>
+                        College Name: <span id="college-name-generated"></span><br>
+                        Location: <span id="location-name-generated"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
